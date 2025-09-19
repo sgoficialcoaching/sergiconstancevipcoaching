@@ -84,8 +84,8 @@ const Chatbot = () => {
     // Respuestas sobre precios
     if (input.includes('precio') || input.includes('costo') || input.includes('cuánto') || input.includes('planes')) {
       return {
-        text: "💰 **PLANES DISPONIBLES:**\n\n📦 **BÁSICA** - €89/mes\n• Plan personalizado básico\n• Soporte por email\n\n🔥 **TRIMESTRAL** - €84.67/mes (5% OFF)\n• Todo lo anterior + seguimiento semanal\n\n⭐ **SEMESTRAL** - €79.83/mes (10% OFF)\n• + Llamadas 1:1 mensuales\n\n👑 **PREMIUM ANUAL** - €81.58/mes (1 mes GRATIS)\n• + Programa 100% personalizado\n\n🏆 **VIP ELITE** - Consulta personalizada\n• Acceso directo a Sergi\n• Solo 12 plazas anuales\n\n¿Cuál te interesa más?",
-        options: ["👑 VIP Elite", "📦 Ver plan básico", "🔥 Plan trimestral", "📞 Consulta gratuita"]
+        text: "💰 **PLANES DISPONIBLES:**\n\n📦 **BÁSICA** - €89/mes\n• Plan personalizado básico\n• Soporte por email\n\n🔥 **TRIMESTRAL** - €84.67/mes (5% OFF)\n• Todo lo anterior + seguimiento semanal\n\n⭐ **SEMESTRAL** - €79.83/mes (10% OFF)\n• + Llamadas 1:1 mensuales\n\n👑 **PREMIUM ANUAL** - €81.58/mes (1 mes GRATIS)\n• + Programa 100% personalizado\n\n🏆 **VIP ELITE** - Consulta personalizada\n• Acceso directo a Sergi\n• Solo 12 plazas anuales\n\nTe llevo directamente a la sección de precios para que veas todos los detalles:",
+        options: ["💰 Ver todos los precios", "👑 VIP Elite", "📞 Consulta gratuita", "❓ Más información"]
       };
     }
 
@@ -209,10 +209,10 @@ const Chatbot = () => {
           text: "📋 Te he llevado al formulario completo donde puedes enviar toda tu información detallada.\n\n¡Es la mejor forma de que Sergi conozca tu situación específica!",
           options: ["💪 Más sobre coaching", "💰 Ver precios", "🌟 Testimonios", "❓ Más preguntas"]
         };
-      } else if (option.includes('precios') || option.includes('💰')) {
+      } else if (option.includes('precios') || option.includes('💰') || option.includes('Ver todos los precios')) {
         document.getElementById('memberships')?.scrollIntoView({ behavior: 'smooth' });
         response = {
-          text: "💰 Te he llevado a la sección de precios donde puedes ver todos los planes disponibles.\n\n¿Tienes alguna pregunta específica sobre los planes?",
+          text: "💰 ¡Perfecto! Te he llevado directamente a la sección de membresías donde puedes ver todos los planes disponibles con precios detallados.\n\n¿Tienes alguna pregunta específica sobre los planes?",
           options: ["👑 VIP Elite", "📦 Plan básico", "📞 Consulta gratuita", "❓ Más información"]
         };
       } else {
