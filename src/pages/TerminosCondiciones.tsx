@@ -8,7 +8,7 @@ const TerminosCondiciones = () => {
       <header className="bg-gray-900 border-b border-gold/20 py-6">
         <div className="container mx-auto px-4">
           <div className="flex items-center">
-            <a href="/" className="flex items-center text-gold hover:text-yellow-400 transition-colors mr-6">
+            <a href="/" className="flex items-center text-gold hover:text-yellow-400 transition-colors mr-6" onClick={(e) => { e.preventDefault(); window.location.href = '/'; }}>
               <ArrowLeft className="w-5 h-5 mr-2" />
               Volver al inicio
             </a>

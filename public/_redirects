@@ -1,1 +1,8 @@
+# Redirecciones para SPA (Single Page Application)
+/politica-privacidad /index.html 200
+/politica-cookies /index.html 200
+/terminos-condiciones /index.html 200
+/politica-reembolso /index.html 200
+
+# Fallback para todas las rutas no encontradas
 /* /index.html 200

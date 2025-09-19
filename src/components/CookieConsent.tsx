@@ -202,11 +202,11 @@ const CookieConsent = () => {
           <div className="mt-6 pt-4 border-t border-gold/20">
             <p className="text-gray-400 text-xs text-center">
               Para más información, consulta nuestra{' '}
-              <a href="#" onClick={(e) => { e.preventDefault(); window.open('/politica-privacidad', '_blank'); }} className="text-gold hover:underline cursor-pointer">
+              <a href="/politica-privacidad" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">
                 Política de Privacidad
               </a>{' '}
               y{' '}
-              <a href="#" onClick={(e) => { e.preventDefault(); window.open('/politica-cookies', '_blank'); }} className="text-gold hover:underline cursor-pointer">
+              <a href="/politica-cookies" target="_blank" rel="noopener noreferrer" className="text-gold hover:underline">
                 Política de Cookies
               </a>
             </p>
