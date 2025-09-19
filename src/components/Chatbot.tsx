@@ -84,7 +84,7 @@ const Chatbot = () => {
     // Respuestas sobre precios
     if (input.includes('precio') || input.includes('costo') || input.includes('cuánto') || input.includes('planes')) {
       return {
-        text: "💰 **PLANES DISPONIBLES:**\n\n📦 **BÁSICA** - €89/mes\n• Plan personalizado básico\n• Soporte por email\n\n🔥 **TRIMESTRAL** - €84.67/mes (5% OFF)\n• Todo lo anterior + seguimiento semanal\n\n⭐ **SEMESTRAL** - €79.83/mes (10% OFF)\n• + Llamadas 1:1 mensuales\n\n👑 **PREMIUM ANUAL** - €81.58/mes (1 mes GRATIS)\n• + Programa 100% personalizado\n\n🏆 **VIP ELITE** - Consulta personalizada\n• Acceso directo a Sergi\n• Solo 12 plazas anuales\n\nTe llevo directamente a la sección de precios para que veas todos los detalles:",
+        text: "💰 **PLANES DISPONIBLES:**\n\n📦 **BÁSICA** - €89/mes\n• Plan personalizado básico\n• Soporte por email\n\n🔥 **TRIMESTRAL** - €84.67/mes (5% OFF)\n• Todo lo anterior + seguimiento semanal\n\n⭐ **SEMESTRAL** - €79.83/mes (10% OFF)\n• + Llamadas 1:1 mensuales\n\n👑 **PREMIUM ANUAL** - €81.58/mes (1 mes GRATIS)\n• + Programa 100% personalizado\n\n🏆 **VIP ELITE** - Consulta personalizada\n• Acceso directo a Sergi\n• Solo 12 plazas anuales\n\n🎯 **Te llevo directamente a la sección de membresías para que veas todos los detalles y puedas seleccionar tu plan:**",
         options: ["💰 Ver todos los precios", "👑 VIP Elite", "📞 Consulta gratuita", "❓ Más información"]
       };
     }
@@ -212,7 +212,7 @@ const Chatbot = () => {
       } else if (option.includes('precios') || option.includes('💰') || option.includes('Ver todos los precios')) {
         document.getElementById('memberships')?.scrollIntoView({ behavior: 'smooth' });
         response = {
-          text: "💰 ¡Perfecto! Te he llevado directamente a la sección de membresías donde puedes ver todos los planes disponibles con precios detallados.\n\n¿Tienes alguna pregunta específica sobre los planes?",
+          text: "💰 ¡Perfecto! Te he llevado directamente a la sección de membresías donde puedes ver todos los planes disponibles con precios detallados y botones para seleccionar directamente.\n\n🎯 **Puedes:**\n• Comparar todos los planes\n• Ver precios exactos\n• Seleccionar tu plan favorito\n• Solicitar consulta VIP\n\n¿Tienes alguna pregunta específica sobre los planes?",
           options: ["👑 VIP Elite", "📦 Plan básico", "📞 Consulta gratuita", "❓ Más información"]
         };
       } else {
@@ -382,7 +382,7 @@ const Chatbot = () => {
                 onClick={() => handleOptionClick("💰 Precios y planes")}
                 className="px-3 py-2 bg-gold/10 hover:bg-gold/20 text-gold text-xs font-medium rounded-full border border-gold/30 transition-colors min-h-[36px] flex items-center"
               >
-                💰 Precios
+                💰 Ver Precios
               </button>
               <button
                 onClick={() => handleOptionClick("📱 WhatsApp directo")}
