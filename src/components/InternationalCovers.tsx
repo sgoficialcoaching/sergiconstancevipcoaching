@@ -212,7 +212,7 @@ const InternationalCovers = () => {
                 </blockquote>
                 <div className="flex items-center">
                   <img
-                    src="https://images.pexels.com/photos/1229356/pexels-photo-1229356.jpeg?auto=compress&cs=tinysrgb&w=60&h=60&fit=crop&crop=face"
+                    src="https://sergiconstance-9fn0dyoiqm.live-website.com/wp-content/uploads/2025/09/Foto-14-12-19-15-39-12-scaled.jpg"
                     alt="Sergi Constance"
                     className="w-10 h-10 rounded-full border-2 border-gold mr-3 object-cover"
                     loading="lazy"
