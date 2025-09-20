@@ -125,15 +125,6 @@ const InternationalCovers = () => {
                     loading="lazy"
                     decoding="async"
                   />
-                  
-                  {/* Overlay */}
-                  <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-transparent to-transparent"></div>
-                  
-                  {/* Cover Info */}
-                  <div className="absolute bottom-4 left-4 text-white">
-                    <h3 className="text-lg font-bold">{covers[activeImage].title}</h3>
-                    <p className="text-sm text-gray-300">{covers[activeImage].country} • {covers[activeImage].year}</p>
-                  </div>
                 </div>
 
                 {/* Thumbnails */}
